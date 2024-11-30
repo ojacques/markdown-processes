@@ -1,0 +1,64 @@
+[
+  {
+    "id": "gateau",
+    "title": "Faire un gâteau",
+    "description": "Comment faire un gâteau au chocolat",
+    "steps": [
+      {
+        "id": "gateau-1",
+        "title": "Choisir le Gâteau Parfait",
+        "description": "\n# À la Recherche du Gâteau Parfait 🎂\n\nPremière étape de notre grande aventure : trouver LE gâteau qui fera sensation !\n\n## Les Critères Essentiels\n- [ ] Un gâteau qui fait \"Wow!\" quand on le voit\n- [ ] Assez grand pour tout le monde (et les deuxièmes parts...)\n- [ ] Dans notre budget (mais on peut rêver un peu)\n\n### Guide de Sélection\nPour choisir le gâteau parfait, considérez :\n- Le nombre d'amis gourmands\n- Les allergies éventuelles\n- La saison (on évite la crème au beurre en été !)\n\n**Processus de Décision**\n```mermaid\ngraph LR\n    A[Envie de Gâteau] --> B[Budget Check]\n    B --> C[Recherche Pâtisserie]\n    C --> D[Lire les Avis]\n    D --> E[Choix Final]\n    E --> F[Réservation?]\n```",
+        "actionItems": []
+      },
+      {
+        "id": "gateau-2",
+        "title": "Commander avec Style",
+        "description": "\n# L'Art de Commander un Gâteau 🗣️\n\nC'est le moment de briller avec votre français et votre connaissance des pâtisseries !\n\n## Phrases Utiles\n- \"Bonjour ! Je voudrais voir vos gâteaux, s'il vous plaît\"\n- \"Quelle est votre spécialité ?\"\n- \"C'est pour combien de personnes ?\"\n\n### Le Vocabulaire du Parfait Gourmand\n- Gâteau au chocolat = Chocolate cake\n- Fraisier = Strawberry cake\n- Tarte = Pie\n- Paris-Brest = Heaven on Earth\n\n**Processus de Commande**\n```mermaid\ngraph LR\n    A[Entrer dans la Pâtisserie] --> B[Dire Bonjour!]\n    B --> C[Admirer la Vitrine]\n    C --> D[Poser des Questions]\n    D --> E[Faire son Choix]\n    E --> F[Commander et Payer]\n```\n",
+        "actionItems": []
+      },
+      {
+        "id": "gateau-3",
+        "title": "Mission Transport Délicat",
+        "description": "\n# Transport de Gâteau : Mission Possible 🚗\n\nLe moment le plus stressant : ramener notre trésor à la maison sans incident !\n\n## Checklist de Transport\n- [ ] Boîte bien fermée\n- [ ] Surface plane dans la voiture\n- [ ] Climatisation si nécessaire\n\n### Guide de Survie\nRègles d'or pour un transport réussi :\n- Position stable\n- Conduite en douceur\n- Pas de musique trop rythmée qui donne envie de danser\n\n**Plan de Mission**\n```mermaid\ngraph LR\n    A[Récupérer le Gâteau] --> B[Vérifier la Boîte]\n    B --> C[Installation Voiture]\n    C --> D[Conduite Zen]\n    D --> E[Arrivée Triomphale]\n```\n",
+        "actionItems": []
+      },
+      {
+        "id": "gateau-4",
+        "title": "La Grande Dégustation",
+        "description": "\n# Le Grand Moment : La Dégustation 🍽️\n\nEnfin, le moment que tout le monde attend : déguster notre chef-d'œuvre !\n\n## L'Art de la Dégustation\n- [ ] Photos pour Instagram (c'est obligé)\n- [ ] Couper des parts égales (ou presque)\n- [ ] Savourer chaque bouchée\n\n### Règles de Savoir-Vivre\nPour une dégustation réussie :\n- Attendre que tout le monde soit servi\n- Complimenter le chef pâtissier\n- Débattre de la technique de coupe parfaite\n\n**Processus de Dégustation**\n```mermaid\ngraph LR\n    A[Sortir le Gâteau] --> B[Séance Photo]\n    B --> C[Découpage Artistique]\n    C --> D[Service]\n    D --> E[Premier Miam!]\n```\n",
+        "actionItems": []
+      }
+    ]
+  },
+  {
+    "id": "viande",
+    "title": "Acheter de la viande",
+    "description": "Comment acheter de la viande",
+    "steps": [
+      {
+        "id": "viande-1",
+        "title": "Choisir le Gâteau Parfait",
+        "description": "\n# À la Recherche du Gâteau Parfait 🎂\n\nPremière étape de notre grande aventure : trouver LE gâteau qui fera sensation !\n\n## Les Critères Essentiels\n- [ ] Un gâteau qui fait \"Wow!\" quand on le voit\n- [ ] Assez grand pour tout le monde (et les deuxièmes parts...)\n- [ ] Dans notre budget (mais on peut rêver un peu)\n\n### Guide de Sélection\nPour choisir le gâteau parfait, considérez :\n- Le nombre d'amis gourmands\n- Les allergies éventuelles\n- La saison (on évite la crème au beurre en été !)\n\n**Processus de Décision**\n```mermaid\ngraph LR\n    A[Envie de Gâteau] --> B[Budget Check]\n    B --> C[Recherche Pâtisserie]\n    C --> D[Lire les Avis]\n    D --> E[Choix Final]\n    E --> F[Réservation?]\n```",
+        "actionItems": []
+      },
+      {
+        "id": "viande-2",
+        "title": "Commander avec Style",
+        "description": "\n# L'Art de Commander un Gâteau 🗣️\n\nC'est le moment de briller avec votre français et votre connaissance des pâtisseries !\n\n## Phrases Utiles\n- \"Bonjour ! Je voudrais voir vos gâteaux, s'il vous plaît\"\n- \"Quelle est votre spécialité ?\"\n- \"C'est pour combien de personnes ?\"\n\n### Le Vocabulaire du Parfait Gourmand\n- Gâteau au chocolat = Chocolate cake\n- Fraisier = Strawberry cake\n- Tarte = Pie\n- Paris-Brest = Heaven on Earth\n\n**Processus de Commande**\n```mermaid\ngraph LR\n    A[Entrer dans la Pâtisserie] --> B[Dire Bonjour!]\n    B --> C[Admirer la Vitrine]\n    C --> D[Poser des Questions]\n    D --> E[Faire son Choix]\n    E --> F[Commander et Payer]\n```\n",
+        "actionItems": []
+      },
+      {
+        "id": "viande-3",
+        "title": "Mission Transport Délicat",
+        "description": "\n# Transport de Gâteau : Mission Possible 🚗\n\nLe moment le plus stressant : ramener notre trésor à la maison sans incident !\n\n## Checklist de Transport\n- [ ] Boîte bien fermée\n- [ ] Surface plane dans la voiture\n- [ ] Climatisation si nécessaire\n\n### Guide de Survie\nRègles d'or pour un transport réussi :\n- Position stable\n- Conduite en douceur\n- Pas de musique trop rythmée qui donne envie de danser\n\n**Plan de Mission**\n```mermaid\ngraph LR\n    A[Récupérer le Gâteau] --> B[Vérifier la Boîte]\n    B --> C[Installation Voiture]\n    C --> D[Conduite Zen]\n    D --> E[Arrivée Triomphale]\n```\n",
+        "actionItems": []
+      },
+      {
+        "id": "viande-4",
+        "title": "La Grande Dégustation",
+        "description": "\n# Le Grand Moment : La Dégustation 🍽️\n\nEnfin, le moment que tout le monde attend : déguster notre chef-d'œuvre !\n\n## L'Art de la Dégustation\n- [ ] Photos pour Instagram (c'est obligé)\n- [ ] Couper des parts égales (ou presque)\n- [ ] Savourer chaque bouchée\n\n### Règles de Savoir-Vivre\nPour une dégustation réussie :\n- Attendre que tout le monde soit servi\n- Complimenter le chef pâtissier\n- Débattre de la technique de coupe parfaite\n\n**Processus de Dégustation**\n```mermaid\ngraph LR\n    A[Sortir le Gâteau] --> B[Séance Photo]\n    B --> C[Découpage Artistique]\n    C --> D[Service]\n    D --> E[Premier Miam!]\n```\n",
+        "actionItems": []
+      }
+    ]
+  }
+]

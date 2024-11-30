@@ -1,0 +1,214 @@
+[
+  {
+    "id": "choisir-gateau",
+    "title": "Choisir le Gâteau Parfait",
+    "description": "\n# À la Recherche du Gâteau Parfait 🎂\n\nPremière étape de notre grande aventure : trouver LE gâteau qui fera sensation !\n\n## Les Critères Essentiels\n- [ ] Un gâteau qui fait \"Wow!\" quand on le voit\n- [ ] Assez grand pour tout le monde (et les deuxièmes parts...)\n- [ ] Dans notre budget (mais on peut rêver un peu)\n\n### Guide de Sélection\nPour choisir le gâteau parfait, considérez :\n- Le nombre d'amis gourmands\n- Les allergies éventuelles\n- La saison (on évite la crème au beurre en été !)\n\n**Processus de Décision**\n```mermaid\ngraph LR\n    A[Envie de Gâteau] --> B[Budget Check]\n    B --> C[Recherche Pâtisserie]\n    C --> D[Lire les Avis]\n    D --> E[Choix Final]\n    E --> F[Réservation?]\n```",
+    "tasks": [
+      {
+        "id": "recherche-patisserie",
+        "title": "Trouver la Meilleure Pâtisserie",
+        "description": "Explorer les pâtisseries du quartier",
+        "actionItems": [
+          "Lire les avis Google pour les pâtisseries locales",
+          "Demander des recommandations aux amis gourmands",
+          "Vérifier les horaires d'ouverture"
+        ]
+      },
+      {
+        "id": "budget-planning",
+        "title": "Planifier le Budget Sucré",
+        "description": "Définir combien on peut dépenser pour ce festin",
+        "actionItems": [
+          "Vérifier le compte en banque",
+          "Calculer le prix par personne",
+          "Prévoir un petit extra pour les boissons"
+        ]
+      }
+    ],
+    "metadata": {
+      "id": "choisir-gateau",
+      "title": "Choisir le Gâteau Parfait",
+      "tasks": [
+        {
+          "id": "recherche-patisserie",
+          "title": "Trouver la Meilleure Pâtisserie",
+          "description": "Explorer les pâtisseries du quartier",
+          "actionItems": [
+            "Lire les avis Google pour les pâtisseries locales",
+            "Demander des recommandations aux amis gourmands",
+            "Vérifier les horaires d'ouverture"
+          ]
+        },
+        {
+          "id": "budget-planning",
+          "title": "Planifier le Budget Sucré",
+          "description": "Définir combien on peut dépenser pour ce festin",
+          "actionItems": [
+            "Vérifier le compte en banque",
+            "Calculer le prix par personne",
+            "Prévoir un petit extra pour les boissons"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "commander-gateau",
+    "title": "Commander avec Style",
+    "description": "\n# L'Art de Commander un Gâteau 🗣️\n\nC'est le moment de briller avec votre français et votre connaissance des pâtisseries !\n\n## Phrases Utiles\n- \"Bonjour ! Je voudrais voir vos gâteaux, s'il vous plaît\"\n- \"Quelle est votre spécialité ?\"\n- \"C'est pour combien de personnes ?\"\n\n### Le Vocabulaire du Parfait Gourmand\n- Gâteau au chocolat = Chocolate cake\n- Fraisier = Strawberry cake\n- Tarte = Pie\n- Paris-Brest = Heaven on Earth\n\n**Processus de Commande**\n```mermaid\ngraph LR\n    A[Entrer dans la Pâtisserie] --> B[Dire Bonjour!]\n    B --> C[Admirer la Vitrine]\n    C --> D[Poser des Questions]\n    D --> E[Faire son Choix]\n    E --> F[Commander et Payer]\n```\n",
+    "tasks": [
+      {
+        "id": "discussion-patissier",
+        "title": "Parler avec le Pâtissier",
+        "description": "Découvrir les spécialités et faire son choix",
+        "actionItems": [
+          "Demander les saveurs du jour",
+          "Discuter des options de personnalisation",
+          "Prendre une photo pour les réseaux (discretement!)"
+        ]
+      },
+      {
+        "id": "passer-commande",
+        "title": "Finaliser la Commande",
+        "description": "Commander le gâteau choisi",
+        "actionItems": [
+          "Spécifier la taille exacte",
+          "Mentionner toute allergie",
+          "Demander l'heure de retrait idéale"
+        ]
+      }
+    ],
+    "metadata": {
+      "id": "commander-gateau",
+      "title": "Commander avec Style",
+      "tasks": [
+        {
+          "id": "discussion-patissier",
+          "title": "Parler avec le Pâtissier",
+          "description": "Découvrir les spécialités et faire son choix",
+          "actionItems": [
+            "Demander les saveurs du jour",
+            "Discuter des options de personnalisation",
+            "Prendre une photo pour les réseaux (discretement!)"
+          ]
+        },
+        {
+          "id": "passer-commande",
+          "title": "Finaliser la Commande",
+          "description": "Commander le gâteau choisi",
+          "actionItems": [
+            "Spécifier la taille exacte",
+            "Mentionner toute allergie",
+            "Demander l'heure de retrait idéale"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "transport-gateau",
+    "title": "Mission Transport Délicat",
+    "description": "\n# Transport de Gâteau : Mission Possible 🚗\n\nLe moment le plus stressant : ramener notre trésor à la maison sans incident !\n\n## Checklist de Transport\n- [ ] Boîte bien fermée\n- [ ] Surface plane dans la voiture\n- [ ] Climatisation si nécessaire\n\n### Guide de Survie\nRègles d'or pour un transport réussi :\n- Position stable\n- Conduite en douceur\n- Pas de musique trop rythmée qui donne envie de danser\n\n**Plan de Mission**\n```mermaid\ngraph LR\n    A[Récupérer le Gâteau] --> B[Vérifier la Boîte]\n    B --> C[Installation Voiture]\n    C --> D[Conduite Zen]\n    D --> E[Arrivée Triomphale]\n```\n",
+    "tasks": [
+      {
+        "id": "preparation-transport",
+        "title": "Préparer le Transport",
+        "description": "Sécuriser le précieux chargement",
+        "actionItems": [
+          "Vérifier que la boîte est bien fermée",
+          "Trouver une surface plane dans la voiture",
+          "Préparer le terrain à la maison"
+        ]
+      },
+      {
+        "id": "operation-transport",
+        "title": "Opération Transport",
+        "description": "Ramener le gâteau intact à la maison",
+        "actionItems": [
+          "Conduire comme si on transportait des œufs",
+          "Éviter les nids de poule",
+          "Ne pas freiner brusquement"
+        ]
+      }
+    ],
+    "metadata": {
+      "id": "transport-gateau",
+      "title": "Mission Transport Délicat",
+      "tasks": [
+        {
+          "id": "preparation-transport",
+          "title": "Préparer le Transport",
+          "description": "Sécuriser le précieux chargement",
+          "actionItems": [
+            "Vérifier que la boîte est bien fermée",
+            "Trouver une surface plane dans la voiture",
+            "Préparer le terrain à la maison"
+          ]
+        },
+        {
+          "id": "operation-transport",
+          "title": "Opération Transport",
+          "description": "Ramener le gâteau intact à la maison",
+          "actionItems": [
+            "Conduire comme si on transportait des œufs",
+            "Éviter les nids de poule",
+            "Ne pas freiner brusquement"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "degustation-gateau",
+    "title": "La Grande Dégustation",
+    "description": "\n# Le Grand Moment : La Dégustation 🍽️\n\nEnfin, le moment que tout le monde attend : déguster notre chef-d'œuvre !\n\n## L'Art de la Dégustation\n- [ ] Photos pour Instagram (c'est obligé)\n- [ ] Couper des parts égales (ou presque)\n- [ ] Savourer chaque bouchée\n\n### Règles de Savoir-Vivre\nPour une dégustation réussie :\n- Attendre que tout le monde soit servi\n- Complimenter le chef pâtissier\n- Débattre de la technique de coupe parfaite\n\n**Processus de Dégustation**\n```mermaid\ngraph LR\n    A[Sortir le Gâteau] --> B[Séance Photo]\n    B --> C[Découpage Artistique]\n    C --> D[Service]\n    D --> E[Premier Miam!]\n```\n",
+    "tasks": [
+      {
+        "id": "preparation-service",
+        "title": "Préparer le Service",
+        "description": "Mettre en place le décor parfait",
+        "actionItems": [
+          "Sortir les jolies assiettes",
+          "Préparer café/thé",
+          "Mettre une playlist française"
+        ]
+      },
+      {
+        "id": "ceremonie-degustation",
+        "title": "La Cérémonie du Gâteau",
+        "description": "Orchestrer le moment parfait",
+        "actionItems": [
+          "Prendre des photos avant de couper",
+          "Couper des parts égales",
+          "Servir avec élégance"
+        ]
+      }
+    ],
+    "metadata": {
+      "id": "degustation-gateau",
+      "title": "La Grande Dégustation",
+      "tasks": [
+        {
+          "id": "preparation-service",
+          "title": "Préparer le Service",
+          "description": "Mettre en place le décor parfait",
+          "actionItems": [
+            "Sortir les jolies assiettes",
+            "Préparer café/thé",
+            "Mettre une playlist française"
+          ]
+        },
+        {
+          "id": "ceremonie-degustation",
+          "title": "La Cérémonie du Gâteau",
+          "description": "Orchestrer le moment parfait",
+          "actionItems": [
+            "Prendre des photos avant de couper",
+            "Couper des parts égales",
+            "Servir avec élégance"
+          ]
+        }
+      ]
+    }
+  }
+]
