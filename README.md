@@ -15,6 +15,8 @@ A dynamic web application for managing and following step-by-step processes with
   - Mermaid diagrams
   - GFM (GitHub Flavored Markdown)
 
+![Screenshot](image.png)
+
 ## Technology Stack
 
 - React
