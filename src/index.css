@@ -4,13 +4,13 @@
 
 /* Add this to your CSS file */
 .markdown-checkbox {
-    margin-right: 0.5rem;
-    cursor: pointer;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 .markdown-checkbox:checked + p {
-    text-decoration: line-through;
-    opacity: 0.7;
+  text-decoration: line-through;
+  opacity: 0.7;
 }
 
 /* Optional: Style the list items to align better */
@@ -36,38 +36,38 @@
 }
 
 .interactive-checkbox-item {
-    position: relative;
-    padding-left: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
 }
 
 .interactive-checkbox-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 1rem;
-    height: 1rem;
-    border: 2px solid #cbd5e0;
-    border-radius: 0.25rem;
-    background: white;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 0.25rem;
+  background: white;
 }
 
 .interactive-checkbox-item[data-checked="true"]::before {
-    background: #4299e1;
-    border-color: #4299e1;
+  background: #4299e1;
+  border-color: #4299e1;
 }
 
 .interactive-checkbox-item[data-checked="true"]::after {
-    content: '';
-    position: absolute;
-    left: 0.3rem;
-    top: 0.3rem;
-    width: 0.4rem;
-    height: 0.7rem;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.3rem;
+  width: 0.4rem;
+  height: 0.7rem;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
