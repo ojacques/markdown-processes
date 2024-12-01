@@ -13,7 +13,7 @@ Examinons de près notre sélection pour s'assurer de sa qualité.
 - [ ] Date de péremption
 - [ ] État de conservation
 
-### Guide d'Inspection
+## Guide d'Inspection
 
 Aspects à vérifier :
 

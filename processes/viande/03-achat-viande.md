@@ -12,7 +12,7 @@ Le moment de conclure votre sélection est arrivé !
 - [ ] Vérifier la coupe
 - [ ] Demander l'emballage approprié
 
-### Conseils d'Achat
+## Conseils d'Achat
 
 Points importants :
 

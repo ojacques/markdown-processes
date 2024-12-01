@@ -12,7 +12,7 @@ Première étape essentielle : sélectionner la viande parfaite pour votre repas
 - [ ] Prix raisonnable
 - [ ] Quantité adaptée aux besoins
 
-### Guide de Sélection
+## Guide de Sélection
 
 Pour choisir la meilleure viande, considérez :
 

@@ -5,7 +5,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMermaid from 'remark-mermaidjs';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
-import { CheckCircle2, Circle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { CheckCircle2, Circle, ChevronLeft, ChevronRight, AlertTriangle, X } from 'lucide-react';
 import PROCESSES from './generatedProcesses.json';
 
 const Card = ({ className, children }) => (
@@ -217,9 +217,12 @@ const ProcessGuideApp = () => {
     };
 
     const navigateStep = (direction) => {
-        if (direction === 'next' && currentStepIndex < currentProcess.steps.length - 1) {
+        const isFirstStep = currentStepIndex === 0;
+        const isLastStep = currentStepIndex === currentProcess.steps.length - 1;
+
+        if (direction === 'next' && !isLastStep) {
             setCurrentStepIndex(currentStepIndex + 1);
-        } else if (direction === 'prev' && currentStepIndex > 0) {
+        } else if (direction === 'prev' && !isFirstStep) {
             setCurrentStepIndex(currentStepIndex - 1);
         }
     };
@@ -254,11 +257,66 @@ const ProcessGuideApp = () => {
         }
     };
 
+    const StorageWarning = () => {
+        const [isVisible, setIsVisible] = useState(true);
+
+        useEffect(() => {
+            // Check if user has already seen the notice
+            const hasSeenNotice = localStorage.getItem('hasSeenStorageNotice');
+            if (hasSeenNotice) {
+                setIsVisible(false);
+            }
+        }, []);
+
+        const dismissNotice = () => {
+            localStorage.setItem('hasSeenStorageNotice', 'true');
+            setIsVisible(false);
+        };
+
+        if (!isVisible) return null;
+
+        return (
+            <div className="mt-8 mb-12 p-4 bg-amber-50 border border-amber-200 rounded-lg shadow-sm">
+                <div className="flex items-start justify-between">
+                    <div className="flex items-start">
+                        <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 mr-3 flex-shrink-0" />
+                        <div>
+                            <h4 className="text-sm font-medium text-amber-800">
+                                Information sur le stockage de l'état
+                            </h4>
+                            <p className="mt-1 text-sm text-amber-700">
+                                La progression est précieusement conservée dans le navigateur ! 🎯
+                                Attention toutefois : elle disparaîtra si tu nettoies les données du navigateur ou en utilisant le mode navigation privée. 🪄
+                            </p>
+                        </div>
+                    </div>
+                    <button
+                        onClick={dismissNotice}
+                        className="ml-4 text-amber-600 hover:text-amber-800"
+                    >
+                        <X className="w-5 h-5" />
+                    </button>
+                </div>
+            </div>
+        );
+    };
+
+
     return (
         <div className="min-h-screen bg-gray-50 py-8">
             <div className="container mx-auto px-4 max-w-4xl">
+                <StorageWarning />
+                <h1 className="text-3xl font-bold text-gray-900 mb-8">
+                    Mes processus
+                </h1>
                 {/* Process Selector */}
                 <div className="mb-6">
+                    <label
+                        htmlFor="process-selector"
+                        className="block text-sm font-medium text-gray-700 mb-2"
+                    >
+                        Sélectionner un processus
+                    </label>
                     <select
                         value={currentProcessId}
                         onChange={(e) => handleProcessChange(e.target.value)}
@@ -273,33 +331,41 @@ const ProcessGuideApp = () => {
                 </div>
 
                 {/* Process Title and Description */}
-                <div className="mb-6">
-                    <h1 className="text-3xl font-bold text-gray-900">{currentProcess.title}</h1>
-                    <p className="text-gray-600">{currentProcess.description}</p>
-                </div>
-
-                <ProgressBar current={currentStepIndex} total={currentProcess.steps.length} />
-
-                {/* Progress Summary */}
-                <div className="mb-6 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <div className="flex justify-between items-center">
-                        <div>
-                            <h3 className="text-sm font-medium text-gray-600">
-                                Progression - {currentProcess.title}
-                            </h3>
-                            <p className="text-lg font-bold text-gray-800">
-                                {Object.keys(completedSteps).filter(key => key.startsWith(currentProcessId)).length} sur {currentProcess.steps.length} étapes terminées
-                            </p>
+                <div className="mb-8 p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+                    <div className="max-w-3xl">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                            {currentProcess.title}
+                        </h2>
+                        <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                            {currentProcess.description}
+                        </p>
+                    </div>
+                    {/* Progress Summary */}
+                    <div className="mb-6 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                        <ProgressBar current={currentStepIndex} total={currentProcess.steps.length} />
+                        <div className="flex justify-between items-center">
+                            <div>
+                                <h3 className="text-sm font-medium text-gray-600">
+                                    Progression - {currentProcess.title}
+                                </h3>
+                                <p className="text-lg font-bold text-gray-800">
+                                    {Object.keys(completedSteps).filter(key => key.startsWith(currentProcessId)).length} sur {currentProcess.steps.length} étapes terminées
+                                </p>
+                            </div>
+                            <Button
+                                variant="outline"
+                                onClick={resetProgress}
+                                className="text-red-600 hover:bg-red-50"
+                            >
+                                Réinitialiser ce processus
+                            </Button>
                         </div>
-                        <Button
-                            variant="outline"
-                            onClick={resetProgress}
-                            className="text-red-600 hover:bg-red-50"
-                        >
-                            Réinitialiser ce processus
-                        </Button>
                     </div>
                 </div>
+
+
+
+
 
                 {/* Current Step Card */}
                 <Card className="mb-6">
@@ -310,7 +376,7 @@ const ProcessGuideApp = () => {
                                     Étape {currentStepIndex + 1}: {currentStep.title}
                                 </CardTitle>
                                 {completedSteps[`${currentProcessId}-${currentStep.id}`] && (
-                                    <span className="inline-flex items-center text-sm text-green-600 mt-1">
+                                    <span className="inline-flex items-center text-sm font-bold bg-green-100 text-green-700 px-3 py-1 rounded-full mt-1">
                                         <CheckCircle2 className="w-4 h-4 mr-1" />
                                         Terminé
                                     </span>
@@ -321,6 +387,7 @@ const ProcessGuideApp = () => {
                                     variant="outline"
                                     onClick={() => navigateStep('prev')}
                                     disabled={currentStepIndex === 0}
+                                    className={`transition-opacity ${currentStepIndex === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'}`}
                                 >
                                     <ChevronLeft className="w-4 h-4 mr-1" />
                                     Précédent
@@ -329,6 +396,7 @@ const ProcessGuideApp = () => {
                                     variant="outline"
                                     onClick={() => navigateStep('next')}
                                     disabled={currentStepIndex === currentProcess.steps.length - 1}
+                                    className={`transition-opacity ${currentStepIndex === currentProcess.steps.length - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'}`}
                                 >
                                     Suivant
                                     <ChevronRight className="w-4 h-4 ml-1" />

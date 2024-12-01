@@ -7,17 +7,21 @@ title: Mission Transport Délicat
 Le moment le plus stressant : ramener notre trésor à la maison sans incident !
 
 ## Checklist de Transport
+
 - [ ] Boîte bien fermée
 - [ ] Surface plane dans la voiture
 - [ ] Climatisation si nécessaire
 
-### Guide de Survie
+## Guide de Survie
+
 Règles d'or pour un transport réussi :
+
 - Position stable
 - Conduite en douceur
 - Pas de musique trop rythmée qui donne envie de danser
 
-**Plan de Mission**
+## Plan de Mission
+
 ```mermaid
 graph LR
     A[Récupérer le Gâteau] --> B[Vérifier la Boîte]

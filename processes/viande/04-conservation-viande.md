@@ -12,7 +12,7 @@ La dernière étape cruciale : bien conserver votre achat !
 - [ ] Emballage adéquat
 - [ ] Durée de conservation respectée
 
-### Bonnes Pratiques
+## Bonnes Pratiques
 
 Pour une conservation optimale :
 

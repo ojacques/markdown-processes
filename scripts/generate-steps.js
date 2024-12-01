@@ -35,7 +35,6 @@ function generateProcessSteps() {
                 id: `${processDefinition.id}-${index + 1}`,
                 title: data.title || `Step ${index + 1}`,
                 description: content,
-                actionItems: data.actionItems || []
             };
         });
 

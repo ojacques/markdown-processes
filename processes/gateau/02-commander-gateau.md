@@ -7,17 +7,20 @@ title: Commander avec Style
 C'est le moment de briller avec votre français et votre connaissance des pâtisseries !
 
 ## Phrases Utiles
+
 - "Bonjour ! Je voudrais voir vos gâteaux, s'il vous plaît"
 - "Quelle est votre spécialité ?"
 - "C'est pour combien de personnes ?"
 
-### Le Vocabulaire du Parfait Gourmand
+## Le Vocabulaire du Parfait Gourmand
+
 - Gâteau au chocolat = Chocolate cake
 - Fraisier = Strawberry cake
 - Tarte = Pie
 - Paris-Brest = Heaven on Earth
 
-**Processus de Commande**
+## Processus de Commande
+
 ```mermaid
 graph LR
     A[Entrer dans la Pâtisserie] --> B[Dire Bonjour!]
